@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="imagens/icone_pag.png">   
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de problemas</h1>
+
+    <form method="get">
+    <p><label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" required> </p>
+
+    <p><label for="sobrenome">Sobrenome:</label>
+    <input type="text" name="sobrenome" id="sobrenome"></p>
+
+    <p><label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" required></p>
+    
+    
+    <p><label for="cpf">CPF:</label>
+    <input type="text" name="cpf" id="cpf" placeholder="xx.xxx.xxx-x"></p>
+    
+    <p><label for="endereço">Endereço:</label>
+    <input type="text" name="endereço" id="endereço"></p>
+
+    <p><label for="telefone">Telefone:</label>
+    <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required></p>
+     
+    
+    <fieldset>
+        <legend>Deseja receber nossa resposta por via?</legend>
+        <input type="radio" name="contato" id="contato-tel" value="tel"> <label for="contato-tel">Telefone</label>
+        <input type="radio" name="contato" id="contato-email" value="email"> <label for="contato-email">E-mail</label>
+    </fieldset>
+     
+    <p><label for="marca">Marca do Aparelho:</label><br>
+    <select name="marcas" id="marca">
+    <option>Selecione</option>
+    <option value="1">Samsung</option>
+    <option value="2">Motorola</option>
+    <option value="3">Iphone</option>
+    <option value="4">Xiaomi</option>
+    <option value="5">Outro</option>
+     
+    </select></p>
+    <p><label for="descricao">Descrição do problema:</label></p>
+    <textarea name="descricão" id="descricao" rows="13" cols="50"  required>
+    </textarea>
+    
+    <p><button>ENVIAR</button></p>
+    </form>
+</body>
+</html>
